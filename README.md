@@ -1,6 +1,6 @@
 # PVDTools
 
-This is a collection of tools to decode VideoNow PVD discs.
+This is a collection of tools to decode VideoNow PVD discs. This version has been ported to decode VideoNow PVD discs on Macs using the command line. The program expects a VideoNow-formatted disc image in (.bin/.cue) format. Although it theoretically works on B&W/VideoNowXP discs as well, they haven't been tested. The tool currently decodes the Video files to a collection of .ppm video frame files and the corresponding WAV file. A future implementation will pair this tool with ffmpeg to properly encode the outputted files to one final video that's easily watchable.
 
 Original binary and source code is [here](https://sourceforge.net/projects/pvdtools/)  
 Technical documentation about black & white disc is [here](https://web.archive.org/web/20161026023116/http://pvdtools.sourceforge.net:80/format.txt)  
@@ -8,15 +8,16 @@ Technical documentation about color disc is [here](https://forum.videohelp.com/t
 
 ## Usage
 1. Execute command-line and type below  
-   PVDTools.exe bw [cue file]  
+   ./PVDTools bw [cue file]  
    => You can get 1 [wav file](https://en.wikipedia.org/wiki/WAV) and multiple [pgm files](https://en.wikipedia.org/wiki/Netpbm_format) in the current directory.
 
-   PVDTools.exe color [cue file]  
+   ./PVDTools color [cue file]  
    => You can get 1 wav file and multiple ppm files in the current directory.
 
-   PVDTools.exe xp [cue file]  
+   ./PVDTools.exe xp [cue file]  
    => You can get 1 wav file and multiple ppm files in the current directory.
+   
+1. Ensure ffmpeg is installed (brew install ffmpeg)
+2. Use ffmpeg to combine ppm and audio files, and choose your desired export format. 
+3. Profit
 
-2. Get [irfanview](https://www.irfanview.com/) and [VirtualDub](http://www.virtualdub.org/) if you don't have it yet
-3. Edit !PpmToBmpToAvi.bat in accordance with your environment
-4. Execute !PpmToBmpToAvi.bat
