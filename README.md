@@ -8,11 +8,11 @@ Technical documentation about color disc is [here](https://forum.videohelp.com/t
 
 ## Usage
 1. Execute command-line and type below<br/>
-   ./PVDTools bw [cue file]
+   ./PVDTools bw [cue file]<br/>
    => You can get 1 [wav file](https://en.wikipedia.org/wiki/WAV) and multiple [pgm files](https://en.wikipedia.org/wiki/Netpbm_format) in the current directory.<br/>
-   ./PVDTools color [cue file]
+   ./PVDTools color [cue file]<br/>
    => You can get 1 wav file and multiple ppm files in the current directory.<br/>
-   ./PVDTools xp [cue file]  
+   ./PVDTools xp [cue file]  <br/>
    => You can get 1 wav file and multiple ppm files in the current directory.<br/>
  
 2. Ensure ffmpeg is installed (brew install ffmpeg)
