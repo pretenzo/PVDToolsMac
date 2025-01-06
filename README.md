@@ -12,10 +12,11 @@ Technical documentation about color disc is [here](https://forum.videohelp.com/t
    ./PVDTools bw [cue file]
    ```
    => You can get 1 [wav file](https://en.wikipedia.org/wiki/WAV) and multiple [pgm files](https://en.wikipedia.org/wiki/Netpbm_format) in the current directory.
-```
-   ./PVDTools color [cue file]  
+   ```
+   ./PVDTools color [cue file]
+   ```
    => You can get 1 wav file and multiple ppm files in the current directory.
-```
+   ```
    ./PVDTools xp [cue file]  
    => You can get 1 wav file and multiple ppm files in the current directory.
    ```
