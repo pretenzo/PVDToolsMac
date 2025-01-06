@@ -7,16 +7,18 @@ Technical documentation about black & white disc is [here](https://web.archive.o
 Technical documentation about color disc is [here](https://forum.videohelp.com/threads/123262-converting-video-formats-%28For-Hasbro-s-VideoNow%29-I-know-the/page17#post1149694)
 
 ## Usage
-1. Execute command-line and type below  
-   ./PVDTools bw [cue file]  
+1. Execute command-line and type below
+   ```
+   ./PVDTools bw [cue file]
+   ```
    => You can get 1 [wav file](https://en.wikipedia.org/wiki/WAV) and multiple [pgm files](https://en.wikipedia.org/wiki/Netpbm_format) in the current directory.
-
+```
    ./PVDTools color [cue file]  
    => You can get 1 wav file and multiple ppm files in the current directory.
-
+```
    ./PVDTools xp [cue file]  
    => You can get 1 wav file and multiple ppm files in the current directory.
-   
+   ```
 1. Ensure ffmpeg is installed (brew install ffmpeg)
 2. Use the convert.sh script to combine ppm and audio files, and export them to .mp4 (script can be changed to any ffmpeg supported format)
 3. Profit
