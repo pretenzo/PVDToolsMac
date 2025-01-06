@@ -14,7 +14,7 @@ Technical documentation about color disc is [here](https://forum.videohelp.com/t
    => You can get 1 wav file and multiple ppm files in the current directory.
    ./PVDTools xp [cue file]  
    => You can get 1 wav file and multiple ppm files in the current directory.
-   ```
+ 
 2. Ensure ffmpeg is installed (brew install ffmpeg)
 3. Use the convert.sh script to combine ppm and audio files, and export them to .mp4 (script can be changed to any ffmpeg supported format)
 4. Profit
